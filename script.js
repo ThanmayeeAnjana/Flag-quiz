@@ -119,7 +119,7 @@ function showFinalScore() {
       <p>Total so far: <b>${round1Score} / 10</b></p>
     `;
   } else {
-    let finalScore = round1Score + round2Score; // ✅ proper overall score
+    let finalScore = round1Score + round2Score;
     quizContainer.innerHTML = `
       <h2>🏆 Quiz Complete!</h2>
       <p style="font-size:18px;">Round 1 Score: <b>${round1Score} / 10</b></p>
@@ -133,27 +133,23 @@ function showFinalScore() {
   nextBtn.textContent = (currentRound === 1) ? "👉 Start Round 2" : "🔄 Restart Quiz";
   nextBtn.style.display = 'inline-block';
 
-  // Update running score at top too
   scoreDisplay.textContent = `Score: ${score}`;
 }
 
-
-// Start quiz
 nextBtn.onclick = () => {
   if (questionCount >= totalQuestions) {
     if (currentRound === 1) {
-      // End of Round 1 → go to Round 2
+
       currentRound = 2;
       questionCount = 0;
       roundCountries = round2;
       nextBtn.style.display = 'none';
       generateQuestion();
     } else {
-  // ✅ End of Round 2 → Show Final Results
+
   let finalScore = round1Score + round2Score;
   let percentage = Math.round((finalScore / 20) * 100);
   
-  // Performance message based on percentage
   let message = "";
   if (percentage === 100) {
     message = "🌟 Outstanding! Perfect Score!";
@@ -191,7 +187,6 @@ nextBtn.onclick = () => {
 };
 
 startBtn.onclick = () => {
-  // ✅ Reset only when starting again
   score = 0;
   round1Score = 0;
   round2Score = 0;
@@ -203,5 +198,3 @@ startBtn.onclick = () => {
   scoreDisplay.textContent = `Score: ${score}`;
   generateQuestion();
 };
-
-
