@@ -1,24 +1,24 @@
 const countries = [
-  { name: "India", flag: "images/india.png" },
-  { name: "USA", flag: "images/usa.png" },
-  { name: "France", flag: "images/france.png" },
-  { name: "Germany", flag: "images/germany.png" },
-  { name: "Japan", flag: "images/japan.png" },
-  { name: "Brazil", flag: "images/brazil.png" },
-  { name: "Italy", flag: "images/italy.png" },
-  { name: "Canada", flag: "images/canada.png" },
-  { name: "Australia", flag: "images/australia.png" },
-  { name: "Russia", flag: "images/russia.png" },
-  { name: "China", flag: "images/china.png" },
-  { name: "UK", flag: "images/uk.png" },
-  { name: "Spain", flag: "images/spain.png" },
-  { name: "Mexico", flag: "images/mexico.png" },
-  { name: "South Africa", flag: "images/south_africa.png" },
-  { name: "Argentina", flag: "images/argentina.png" },
-  { name: "South Korea", flag: "images/south_korea.png" },
-  { name: "Netherlands", flag: "images/netherlands.png" },
-  { name: "Turkey", flag: "images/turkey.png" },
-  { name: "Sweden", flag: "images/sweden.png" }
+  { name: "India", flag: "india.png" },
+  { name: "USA", flag: "usa.png" },
+  { name: "France", flag: "france.png" },
+  { name: "Germany", flag: "germany.png" },
+  { name: "Japan", flag: "japan.png" },
+  { name: "Brazil", flag: "brazil.png" },
+  { name: "Italy", flag: "italy.png" },
+  { name: "Canada", flag: "canada.png" },
+  { name: "Australia", flag: "australia.png" },
+  { name: "Russia", flag: "russia.png" },
+  { name: "China", flag: "china.png" },
+  { name: "UK", flag: "uk.png" },
+  { name: "Spain", flag: "spain.png" },
+  { name: "Mexico", flag: "mexico.png" },
+  { name: "South Africa", flag: "south_africa.png" },
+  { name: "Argentina", flag: "argentina.png" },
+  { name: "South Korea", flag: "south_korea.png" },
+  { name: "Netherlands", flag: "netherlands.png" },
+  { name: "Turkey", flag: "turkey.png" },
+  { name: "Sweden", flag: "sweden.png" }
 ];
 
 const startBtn = document.getElementById('startBtn');
@@ -203,4 +203,5 @@ startBtn.onclick = () => {
   scoreDisplay.textContent = `Score: ${score}`;
   generateQuestion();
 };
+
 
