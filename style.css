@@ -12,7 +12,6 @@ header {
   padding: 20px;
 }
 
-/* Start & Next buttons with colors */
 #startBtn {
   background: #ff5722;
   color: white;
@@ -51,7 +50,6 @@ button {
   align-items: center;
 }
 
-/* Flag image */
 .flag-question {
   width: 220px;
   height: 140px;
@@ -66,7 +64,6 @@ button {
   transform: scale(1.05);
 }
 
-/* Answer buttons */
 .option-btn {
   display: block;
   width: 220px;
@@ -85,7 +82,6 @@ button {
   transform: scale(1.03);
 }
 
-/* Responsive adjustments */
 @media (max-width: 500px) {
   .flag-question, .option-btn {
     width: 90%;
